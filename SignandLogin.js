@@ -34,8 +34,8 @@ function valideInput()
     var un=document.getElementById('name').value;
     var pw=document.getElementById('pass2').value;
 
-pass1=form.pass1.value;
-pass2=form.pass2.value;
+    pass1=form.pass1.value;
+    pass2=form.pass2.value;
 
     if(pass1=='')
     {
@@ -56,20 +56,22 @@ pass2=form.pass2.value;
         return true;
     }
 
+    un1=document.form("form").uname.value;
+    pw1=document.form("form").pass1.value;
+    pw2=document.form("form").pass2.value;
 
 
-
-    if(un=='')
+    if(un1=='')
     {
         alert('Username can not be Empty!');
     }
-    if(pw=='')
+    else if(pw1=='')
     {
         alert("Password can not be Empty!");
     }
-    else 
+    else if (pw2=='') 
     {
-        return true;
+        alert("These password field can not be empty ");
     }
 }
 
